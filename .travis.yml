@@ -5,6 +5,7 @@ solution: webapp_DataTransferToView.sln
 branches: 
   only:
     - master
+    - main
 
 install: 
   - dotnet restore
