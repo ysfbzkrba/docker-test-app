@@ -11,6 +11,7 @@ install:
   - dotnet restore
 
 before_script:
+  - chmod -R a+x scripts
   - ./scripts/begin.sh
   
 script:  
