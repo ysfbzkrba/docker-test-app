@@ -16,10 +16,10 @@ before_script:
   
 script:  
   - ./scripts/current.sh
-  - dotnet publish --configuration Release --runtime win-x64    /p:PublishSingFile --output win-x64
-  - dotnet publish --configuration Release --runtime win-x86    /p:PublishSingFile --output win-x64
-  - dotnet publish --configuration Release --runtime linux-x64  /p:PublishSingFile --output win-x64
-  - dotnet publish --configuration Release --runtime osx-x64    /p:PublishSingFile --output win-x64
+  - dotnet publish --configuration Release --runtime win-x64    /p:PublishSingFile=false --output win-x64
+  - dotnet publish --configuration Release --runtime win-x86    /p:PublishSingFile=false --output win-x64
+  - dotnet publish --configuration Release --runtime linux-x64  /p:PublishSingFile=false --output win-x64
+  - dotnet publish --configuration Release --runtime osx-x64    /p:PublishSingFile=false --output win-x64
 
 after_script:
   - ./scripts/end.sh
